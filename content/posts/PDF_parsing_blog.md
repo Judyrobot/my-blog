@@ -5,8 +5,6 @@ draft: false
 tags: ["PDF解析", "OCR", "Unstructured", "PaddleOCR", "DeepSeek-OCR", "YOLOX"]
 ---
 
-# 基于 Unstructured + PaddleOCR + DeepSeek-OCR 的智能 PDF 解析技术路线复盘
-
 最近终于把一条完整的智能 PDF 解析链路跑通了。整个方案从最开始的 `fast` 策略文本提取，到后面的 `hi_res`、版面检测、Paddle OCR、表格图块导出，再到 DeepSeek-OCR 对表格进行结构化增强，基本把一条复杂 PDF 的解析链完整打透了。
 
 最终效果比预期要好，尤其是 **YOLOX 在版面检测阶段对表格区域的提取效果明显优于 detectron2_onnx**，这一点对后续表格结构化质量提升非常关键。

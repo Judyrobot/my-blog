@@ -1,4 +1,69 @@
-baseURL = 'https://example.org/'
-languageCode = 'zh-cn'
-title = 'Judy的博客'
-theme = 'ananke'
+baseURL = "https://my-blog-5ay.pages.dev/"
+languageCode = "zh-cn"
+title = "Judy的Blog"
+theme = "hugo-theme-stack"
+
+[pagination]
+pagerSize = 5
+
+[params]
+mainSections = ["posts"]
+featuredImageField = "image"
+rssFullContent = true
+
+[params.sidebar]
+subtitle = "记录技术学习、项目实践与思考"
+emoji = "👨‍💻"
+avatar = "img/avatar.jpg"
+
+[params.article]
+math = false
+toc = true
+readingTime = true
+
+[params.footer]
+since = 2026
+
+[[params.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/Judyrobot"
+
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 20
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 30
+
+[[menu.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/Judyrobot"
+weight = 10
+
+[[widgets.page]]
+type = "toc"
+
+[[widgets.homepage]]
+type = "search"
+
+[[widgets.homepage]]
+type = "archives"
+
+[[widgets.homepage]]
+type = "categories"
+
+[[widgets.homepage]]
+type = "tag-cloud"

@@ -1,38 +1,52 @@
 baseURL = "https://my-blog-5ay.pages.dev/"
 languageCode = "zh-cn"
 title = "Judy的Blog"
-theme = "hugo-theme-stack"
+theme = "PaperMod"
 
 [pagination]
 pagerSize = 5
 
 [params]
-mainSections = ["posts"]
-featuredImageField = "image"
-rssFullContent = true
+env = "production"
+title = "Judy的Blog"
+description = "记录技术学习、项目实践与思考"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+ShowWordCount = false
+UseHugoToc = true
 
-[params.sidebar]
-subtitle = "记录技术学习、项目实践与思考"
-emoji = "👨‍💻"
-avatar = "img/avatar.jpg"
+[params.profileMode]
+enabled = true
+title = "Judy"
+subtitle = "后端 / AI 应用 / 技术项目记录\n记录技术学习、项目实践与思考"
+imageUrl = "/img/avatar.png"
+imageTitle = "Judy"
+imageWidth = 160
+imageHeight = 160
 
-[params.article]
-math = false
-toc = true
-readingTime = true
+[[params.profileMode.buttons]]
+name = "博客文章"
+url = "/posts"
 
-[params.footer]
-since = 2026
+[[params.profileMode.buttons]]
+name = "关于我"
+url = "/about"
 
-[[params.social]]
-identifier = "github"
-name = "GitHub"
+[[params.socialIcons]]
+name = "github"
 url = "https://github.com/Judyrobot"
 
+[menu]
+
 [[menu.main]]
-identifier = "home"
-name = "首页"
-url = "/"
+identifier = "posts"
+name = "文章"
+url = "/posts/"
 weight = 10
 
 [[menu.main]]
@@ -42,28 +56,13 @@ url = "/archives/"
 weight = 20
 
 [[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 30
+
+[[menu.main]]
 identifier = "about"
 name = "关于"
 url = "/about/"
-weight = 30
-
-[[menu.social]]
-identifier = "github"
-name = "GitHub"
-url = "https://github.com/Judyrobot"
-weight = 10
-
-[[widgets.page]]
-type = "toc"
-
-[[widgets.homepage]]
-type = "search"
-
-[[widgets.homepage]]
-type = "archives"
-
-[[widgets.homepage]]
-type = "categories"
-
-[[widgets.homepage]]
-type = "tag-cloud"
+weight = 40

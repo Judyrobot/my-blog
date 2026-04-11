@@ -2,7 +2,7 @@
 title: "基于Bert+LMST+MLP专利相关性筛选项目实践"
 date: 2026-04-08T20:00:00+09:00
 draft: false
-tags: ["专利筛选", "bert"， “LMST”]
+tags: ["专利筛选", "bert", "LSTM"]
 ---
 
 # 小样本专利相关性筛选：一个从 100 条不到的标注数据起步的项目实践
